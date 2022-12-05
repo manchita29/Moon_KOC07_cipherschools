@@ -1,0 +1,195 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 30px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url("https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2019/10/Blog-10-1030x538.jpg") no-repeat center center/cover;
+    height: 1590px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.4;
+}
+
+#home h1{
+    color:black;
+    text-align: center;
+    font-size: 4.8rem;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p{
+    color:black;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Bree Serif', serif;
+}
+
+/* Specialities Section */
+#specialities{
+    text-align: center;
+    margin: 20px;
+    display: flex;
+}
+#specialities .box{ 
+    border: 3px solid brown;
+    padding: 35px;
+    margin: 2px 30px;
+    border-radius: 18px;
+    background: #f2f2f2;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#specialities .box img{ 
+   height: 100px;
+   margin: auto;
+   display: block;
+ }
+
+#specialities .box p{
+    font-family: 'Bree Serif', serif;
+
+} 
+
+/* offers Section */
+#offer-section{ 
+    position: relative;
+    text-align: center;
+    font-size: 1.6rem;
+    color: rgb(3, 1, 12);
+    text-decoration: wavy;
+}
+
+#offer-section::before{
+ content: "";
+ position: absolute;
+ background: url('../bg.jpg');
+ width: 0%;
+ height: 100%;
+ z-index: -1;
+ opacity: 0.3;
+}
+
+#offers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offer-item{
+    padding: 30px;
+}
+
+#offers img{
+    height: 200px;
+   
+}
+#feedback{
+    display: flex;
+    flex-direction: column;
+    padding:3px 650px;
+    height: 55px;
+}
+
+#feedback a{
+    text-align: center;
+    font-size: 1.9rem;
+    text-decoration: none;
+    display: block;
+    color: black;
+    padding: 3px 22px;
+}
+#feedback a:hover{
+    color: black;
+    background-color: white;
+    padding: 3px 22px;
+}
+
+
+  
+
+
+
+
+

@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Open sans",sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: azure;
+}
+
+.about-section{
+    background: url(https://d1whtlypfis84e.cloudfront.net/guides/wp-content/uploads/2019/08/05070155/healthy-food-1024x768.jpeg) no-repeat;
+    background-size: 100%;
+    background-color: rgb(199, 86, 11);
+    overflow: hidden;
+    padding: 100px 100;
+}
+
+.inner-container{
+    width: 55%;
+    float: right;
+    background-color: beige;
+    padding: 150px;
+}
+
+.inner-container h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.text{
+    font-size: 13px;
+    color: black;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
